@@ -35,6 +35,10 @@ public class WebElementDemo {
 		WebElement city = wd.findElement(By.id("city"));
 		System.out.println(city.getText());
 		
+		// taking screenshort in selenium
+		File fr = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
+		Files.copy(fr, new File("C:\\Users\\santhosh.v\\Pictures\\p.jpeg"));
+		
 
 
 	}
